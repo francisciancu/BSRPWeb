@@ -8,4 +8,4 @@ const newpage: React.FC = () => {
   );
 };
 
-export default About;
+export default newpage;
