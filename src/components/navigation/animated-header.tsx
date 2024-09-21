@@ -147,7 +147,7 @@ export default function Header({
             <MobileNav items={items} className="bg-none border-none" />
           </motion.div>
         </div>
-        <Link href="/about">About</Link>
+        <Link href="/newpage">About</Link>
       </motion.header>
       {/* Gutter */}
       {useGutter && <div className="h-20 w-full" />}
