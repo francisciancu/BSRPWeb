@@ -7,19 +7,24 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
-import Image from 'next/image';
+import Image from "next/image";
 import { useEffect } from "react";
-import { config } from '../../../config';
-import { NavItem } from '@/lib/types';
-import Link from 'next/link';
-import MobileNav from './mobile-nav';
-import { cn } from '@/lib/utils';
+import { config } from "../../../config";
+import { NavItem } from "@/lib/types";
+import Link from "next/link";
+import MobileNav from "./mobile-nav";
+import { cn } from "@/lib/utils";
 
 export const defaultNavigation = {
   items: config.navigation?.items ?? [
     { label: "About", href: "#about", enabled: true },
     { label: "Servers", href: "#servers", enabled: true },
-    { label: "Leaderboard", href: "#leaderboard", enabled: config.cftools.leaderboard.enabled },
+    {
+      label: "Leaderboard",
+      href: "#leaderboard",
+      enabled: config.cftools.leaderboard.enabled,
+    },
+    { label: "Crafting Guide", href: "/Crafting_Guide", enabled: true },
     { label: "Contact", href: "#contact", enabled: true },
   ],
 } satisfies { items: NavItem[] };
@@ -36,9 +41,7 @@ function useBoundedScroll(threshold: number) {
   useEffect(() => {
     return scrollY.on("change", (current) => {
       let previous = scrollY.getPrevious();
-      let diff = typeof previous === 'number'
-        ? current - previous
-        : current;
+      let diff = typeof previous === "number" ? current - previous : current;
       let newScrollYBounded = scrollYBounded.get() + diff;
 
       scrollYBounded.set(clamp(newScrollYBounded, 0, threshold));
@@ -60,7 +63,7 @@ export default function Header({
   useGutter = false,
 }: HeaderProps) {
   items = items.filter((item) => item.enabled);
-  
+
   // Note: 80px is exactly h-20 in Tailwind CSS
   // This is the threshold where the header will shrink
   let { scrollYBoundedProgress } = useBoundedScroll(80);
@@ -74,11 +77,7 @@ export default function Header({
     <div className={cn("z-50 flex-1 overflow-y-scroll", className)}>
       <motion.header
         style={{
-          height: useTransform(
-            scrollYBoundedProgressDelayed,
-            [0, 1],
-            [80, 50]
-          ),
+          height: useTransform(scrollYBoundedProgressDelayed, [0, 1], [80, 50]),
           backgroundColor: useMotionTemplate`rgb(2 6 23 / ${useTransform(
             scrollYBoundedProgressDelayed,
             [0, 1],
@@ -126,12 +125,17 @@ export default function Header({
             className="hidden sm:flex space-x-4 text-sm font-medium text-slate-400 duration-300"
           >
             {items.map((item, index) => (
-              <Link key={index} href={item.href} className='font-bold hover:text-primary duration-300'>
+              <Link
+                key={index}
+                href={item.href}
+                className="font-bold hover:text-primary duration-300"
+              >
                 {item.label}
               </Link>
             ))}
           </motion.nav>
-          <motion.div className='block sm:hidden duration-300'
+          <motion.div
+            className="block sm:hidden duration-300"
             style={{
               scale: useTransform(
                 scrollYBoundedProgressDelayed,
