@@ -65,12 +65,12 @@ export const config: Config = {
           },
         },
         teststuff: {
-          title: "About Us",
+          title: "test stuff",
           description:
             "We are a community of DayZ players who are passionate about the game and the experiences it provides. We strive to provide a safe and enjoyable environment for all players.",
           rows: {
             1: {
-              title: "Events",
+              title: "test stuff",
               description:
                 "We host regular events and competitions for our players to participate in. These events are a great way to meet new people and have fun in the game.",
               image: {
@@ -79,7 +79,7 @@ export const config: Config = {
               },
             },
             2: {
-              title: "Community",
+              title: "test stuff",
               description:
                 "We believe that a strong community is the key to a successful server. We work hard to foster a positive and inclusive community for all players.",
               image: {
@@ -88,7 +88,7 @@ export const config: Config = {
               },
             },
             3: {
-              title: "Development",
+              title: "test stuff",
               description:
                 "Our team of developers are constantly working to improve the server and add new features. We welcome feedback and suggestions from our players.",
               image: {
