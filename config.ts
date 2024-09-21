@@ -6,7 +6,7 @@ export const config: Config = {
   logoURL: "/images/logo.png",
   site: {
     url: "https://www.skvad.eu/",
-    title: "SKVAD Community",
+    title: "British Survivors Roleplay Community",
     twitter: {
       site: "@site",
       creator: "@creator",
@@ -14,16 +14,16 @@ export const config: Config = {
       images: [
         {
           url: "/images/marketing/banner.png",
-          alt: "Marketing Banner for SKVAD Community",
+          alt: "Marketing Banner for British Survivors Roleplay Community",
         },
       ],
     },
   },
   pages: {
     home: {
-      title: "Home | SKVAD Community",
+      title: "Home | British Survivors Roleplay Community",
       description:
-        "Welcome to the SKVAD Community! We are a DayZ community that is dedicated to providing the best experience for our players. Join us today!",
+        "Welcome to the British Survivors Roleplay Community! We are a DayZ community that is dedicated to providing the best experience for our players. Join us today!",
       sections: {
         network: {
           title: "Server Network",
@@ -74,8 +74,8 @@ export const config: Config = {
           description:
             "If you have any questions or concerns, please don't hesitate to contact us through the following channels.",
           links: {
-            Discord: "https://discord.gg/skvad",
-            Email: "mailto:info@skvad.eu",
+            Discord: "https://discord.gg/4Tap7JKJw8",
+            Email: "mailto:BSRPSky@outlook.com",
           },
         },
       },
@@ -94,16 +94,16 @@ export const config: Config = {
     },
     cta: {
       label: "Join us today!",
-      href: "https://discord.gg/mirasaki",
+      href: "https://discord.gg/4Tap7JKJw8",
     },
   },
   servers: [
     {
-      name: "SKVAD EU1",
-      ipv4: "193.25.252.92",
+      name: "[UK/EU] British Survivors Roleplay | NO KOS",
+      ipv4: "95.156.230.194",
       gamePort: 2302,
       steamQueryPort: 27016,
-      cftoolsApiId: "7732f152-3b6b-4da5-9356-b43ebfef2012",
+      cftoolsApiId: "1440fc26-2357-4bb3-b10a-099c0ab5ef9d",
     },
   ],
   cftools: {
