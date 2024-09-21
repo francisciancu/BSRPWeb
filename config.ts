@@ -126,7 +126,7 @@ export const config: Config = {
   footer: {
     trademarkNotice:
       "The DayZ logo is a registered trademark of Bohemia Interactive a.s. SKVAD is not affiliated with Bohemia Interactive a.s. or DayZ. All other trademarks are the property of their respective owners.",
-    brandingName: "SKVAD Community",
+    brandingName: "British Survivors Roleplay Community",
     brandingURL: "/",
     initialCopyrightYear: 2021,
     copyrightBrandName: "SKVAD",
