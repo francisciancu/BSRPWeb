@@ -1,4 +1,4 @@
-import { NavItem } from '@/lib/types';
+import { NavItem } from "@/lib/types";
 
 export type Config = {
   /**
@@ -7,16 +7,16 @@ export type Config = {
    * you're hosted on a server, you should use `nodejs`. If you're hosted on a
    * serverless platform, you should use `edge`.
    */
-  runtime: 'nodejs' | 'edge';
+  runtime: "nodejs" | "edge";
   /**
    * The theme color for this app. This color is used by the browser to
    * customize the appearance of the browser's UI elements, and is used
    * throughout the app to provide a consistent color scheme.
-   * 
+   *
    * Note: This determines the color of link/URL previews on various platforms.
-   * 
+   *
    * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color
-   * 
+   *
    * @default "#5789f6"
    */
   themeColor: string;
@@ -35,7 +35,7 @@ export type Config = {
     title: string;
     /**
      * The template to use for the title of each page in the app.
-     * 
+     *
      * @default "%s | %s"
      */
     titleTemplate?: string;
@@ -46,7 +46,7 @@ export type Config = {
     twitter?: {
       site?: string;
       creator?: string;
-      card?: 'summary' | 'summary_large_image' | 'app' | 'player';
+      card?: "summary" | "summary_large_image" | "app" | "player";
       images?: {
         url: string;
         alt: string;
@@ -95,7 +95,37 @@ export type Config = {
                 alt: string;
               };
             };
-          }
+          };
+        };
+        teststuff: {
+          title: string;
+          description: string;
+          rows: {
+            1: {
+              title: string;
+              description: string;
+              image: {
+                url: string;
+                alt: string;
+              };
+            };
+            2: {
+              title: string;
+              description: string;
+              image: {
+                url: string;
+                alt: string;
+              };
+            };
+            3: {
+              title: string;
+              description: string;
+              image: {
+                url: string;
+                alt: string;
+              };
+            };
+          };
         };
         leaderboard: {
           title: string;
@@ -108,7 +138,7 @@ export type Config = {
             [key: string]: string;
           };
         };
-      }
+      };
     };
   };
   /** Navigation items for the app. */
@@ -142,19 +172,19 @@ export type Config = {
     ipv4: string;
     /**
      * The port of the server
-     * 
+     *
      * @default 2302
      */
     gamePort: number;
     /**
      * The Steam query port of the server
-     * 
+     *
      * @default 27016
      */
     steamQueryPort: number;
     /**
      * The CFTools API ID for the server. This is used to fetch data from the CFTools API.
-     * 
+     *
      * @see https://wiki.mirasaki.dev/docs/cftools-server-api-id
      */
     cftoolsApiId?: string;
@@ -195,4 +225,11 @@ export type Config = {
   };
 };
 
-export type LeaderboardSortValues = 'kills' | 'deaths' | 'suicides' | 'playtime' | 'longest_kill' | 'longest_shot' | 'kdratio';
+export type LeaderboardSortValues =
+  | "kills"
+  | "deaths"
+  | "suicides"
+  | "playtime"
+  | "longest_kill"
+  | "longest_shot"
+  | "kdratio";
