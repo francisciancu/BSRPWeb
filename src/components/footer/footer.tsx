@@ -1,11 +1,10 @@
-import React from 'react';
-import { config } from '../../../config';
-import Link from 'next/link';
-import Image from 'next/image';
+import React from "react";
+import { config } from "../../../config";
+import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
-  return (
-  );
+  return <div>test</div>;
 };
 
 export default Footer;
