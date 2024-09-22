@@ -18,12 +18,12 @@ const MobileNav = ({
   items = defaultNavigation.items,
   className,
 }: HeaderProps) => {
-  const [isOpen, setIsOpen] = useState(false); // Add drawer state
+  const [isOpen, setIsOpen] = useState(false);
 
   items = items.filter((item) => item.enabled);
 
   const handleLinkClick = () => {
-    setIsOpen(false); // Close the drawer when a link is clicked
+    setIsOpen(false);
   };
 
   return (
@@ -53,7 +53,7 @@ const MobileNav = ({
               >
                 <XIcon
                   className="h-7 w-7 hover:text-primary hover:scale-125"
-                  onClick={() => setIsOpen(false)} // Close drawer on click
+                  onClick={() => setIsOpen(false)}
                 />
               </DrawerClose>
             </div>
@@ -80,7 +80,7 @@ const MobileNav = ({
                   variant="ghost"
                   size="lg"
                   className="w-fit mx-auto"
-                  onClick={handleLinkClick} // Close drawer when link is clicked
+                  onClick={handleLinkClick}
                 >
                   {item.label}
                 </LinkButton>

@@ -3,9 +3,9 @@
 import React from "react";
 import Image from "next/image";
 import LightGallery from "lightgallery/react";
-import "lightgallery/css/lightgallery.css"; // Lightgallery core styles
-import "lightgallery/css/lg-zoom.css"; // Plugin styles
-import "lightgallery/css/lg-thumbnail.css"; // Plugin styles
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
 
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";

@@ -24,7 +24,7 @@ export const defaultNavigation = {
       href: "#leaderboard",
       enabled: config.cftools.leaderboard.enabled,
     },
-    { label: "Crafting Guide", href: "/newpage", enabled: true },
+    { label: "Crafting Guide", href: "/crafting_guide", enabled: true },
     { label: "Contact", href: "/#contact", enabled: true },
   ],
 } satisfies { items: NavItem[] };

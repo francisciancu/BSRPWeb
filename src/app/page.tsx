@@ -6,7 +6,6 @@ import dynamic from "next/dynamic";
 import { LeaderboardEntry, getServerLeaderboards } from "@/lib/cftools";
 import ContactSection from "@/sections/contact-section";
 
-// Lazy load chonky leaderboard section
 const LeaderboardSection = dynamic(
   () => import("@/sections/leaderboard-section")
 );
