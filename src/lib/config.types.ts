@@ -97,36 +97,6 @@ export type Config = {
             };
           };
         };
-        teststuff: {
-          title: string;
-          description: string;
-          rows: {
-            1: {
-              title: string;
-              description: string;
-              image: {
-                url: string;
-                alt: string;
-              };
-            };
-            2: {
-              title: string;
-              description: string;
-              image: {
-                url: string;
-                alt: string;
-              };
-            };
-            3: {
-              title: string;
-              description: string;
-              image: {
-                url: string;
-                alt: string;
-              };
-            };
-          };
-        };
         leaderboard: {
           title: string;
           description: string;

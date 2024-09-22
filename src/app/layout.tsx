@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import { config } from '../../config';
-import { cn } from '@/lib/utils';
-import { fontSans } from '@/lib/fonts';
-import { ThemeProvider } from '@/components/theme/theme-provider';
-import Header from '@/components/navigation/animated-header';
-import Footer from '@/components/footer/footer';
+import { config } from "../../config";
+import { cn } from "@/lib/utils";
+import { fontSans } from "@/lib/fonts";
+import { ThemeProvider } from "@/components/theme/theme-provider";
+import Header from "@/components/navigation/animated-header";
+import Footer from "@/components/footer/footer";
 
 export const runtime = config.runtime;
 
@@ -16,28 +16,30 @@ export const viewport: Viewport = {
 export async function generateMetadata(): Promise<Metadata> {
   const sharedMetadata: Metadata = {
     metadataBase: new URL(config.site.url),
-    creator: 'Mirasaki Development',
-    alternates: { canonical: '/' },
+    creator: "Mirasaki Development",
+    alternates: { canonical: "/" },
     icons: {
-      icon: '/favicon.ico',
-      shortcut: '/favicon-16x16.png',
-      apple: '/apple-touch-icon.png',
+      icon: "/favicon.ico",
+      shortcut: "/favicon-16x16.png",
+      apple: "/apple-touch-icon.png",
     },
     twitter: {
-      card: config.site.twitter?.card ?? 'summary_large_image',
-      site: config.site.twitter?.site ?? '@site',
-      creator: config.site.twitter?.creator ?? '@creator',
+      card: config.site.twitter?.card ?? "summary_large_image",
+      site: config.site.twitter?.site ?? "@site",
+      creator: config.site.twitter?.creator ?? "@creator",
       images: [],
     },
   };
   if (config.site.twitter?.images) {
     if (!sharedMetadata.twitter) sharedMetadata.twitter = { images: [] };
-    sharedMetadata.twitter.images = config.site.twitter.images.map(({ url, alt }) => ({
-      url: sharedMetadata.metadataBase
-        ? new URL(url, sharedMetadata.metadataBase).href
-        : url,
-      alt,
-    }));
+    sharedMetadata.twitter.images = config.site.twitter.images.map(
+      ({ url, alt }) => ({
+        url: sharedMetadata.metadataBase
+          ? new URL(url, sharedMetadata.metadataBase).href
+          : url,
+        alt,
+      })
+    );
   }
   return {
     ...sharedMetadata,
@@ -56,16 +58,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn(
-        'min-h-screen bg-background font-sans antialiased',
-        fontSans.variable
-      )}>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable
+        )}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
-          forcedTheme='dark'
+          forcedTheme="dark"
         >
           <div className="flex min-h-screen flex-col">
             <div id="anchor-top" aria-hidden />

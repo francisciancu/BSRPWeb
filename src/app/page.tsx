@@ -5,7 +5,6 @@ import { config } from "../../config";
 import dynamic from "next/dynamic";
 import { LeaderboardEntry, getServerLeaderboards } from "@/lib/cftools";
 import ContactSection from "@/sections/contact-section";
-import TestStuffSection from "@/sections/test-stuff-section";
 
 // Lazy load chonky leaderboard section
 const LeaderboardSection = dynamic(
@@ -22,7 +21,6 @@ export default async function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between w-full">
       <MainHero />
       <AboutSection />
-      <TestStuffSection />
       <ServerNetworkSection />
       {config.cftools.leaderboard.enabled && (
         <LeaderboardSection
