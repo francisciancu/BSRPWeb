@@ -4,7 +4,6 @@ import ServerNetworkSection from "@/sections/server-network-section";
 import { config } from "../../config";
 import dynamic from "next/dynamic";
 import { LeaderboardEntry, getServerLeaderboards } from "@/lib/cftools";
-import ContactSection from "@/sections/contact-section";
 
 const LeaderboardSection = dynamic(
   () => import("@/sections/leaderboard-section")
@@ -31,7 +30,6 @@ export default async function Home() {
           error={error}
         />
       )}
-      <ContactSection />
     </main>
   );
 }

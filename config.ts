@@ -3,7 +3,7 @@ import { Config } from "./src/lib/config.types";
 export const config: Config = {
   runtime: "nodejs",
   themeColor: "#5789f6",
-  logoURL: "/images/logoBSRP.png",
+  logoURL: "/images/logoBSRPWhite.png",
   site: {
     url: "https://www.skvad.eu/",
     title: "British Survivors Roleplay Community",

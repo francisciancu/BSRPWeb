@@ -18,14 +18,14 @@ import { cn } from "@/lib/utils";
 export const defaultNavigation = {
   items: config.navigation?.items ?? [
     { label: "About", href: "/#about", enabled: true },
-    { label: "Servers", href: "/#servers", enabled: true },
+    { label: "Server", href: "/#servers", enabled: true },
     {
       label: "Leaderboard",
       href: "#leaderboard",
       enabled: config.cftools.leaderboard.enabled,
     },
     { label: "Crafting Guide", href: "/crafting_guide", enabled: true },
-    { label: "Contact", href: "/#contact", enabled: true },
+    { label: "Contact", href: "/#contact", enabled: false },
   ],
 } satisfies { items: NavItem[] };
 
