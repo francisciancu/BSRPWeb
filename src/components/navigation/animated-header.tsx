@@ -1,5 +1,6 @@
 "use client";
-
+import { ChevronDown, ChevronUp } from "lucide-react";
+import React, { useEffect, useState, useRef } from "react";
 import {
   motion,
   useMotionTemplate,
@@ -8,7 +9,6 @@ import {
   useTransform,
 } from "framer-motion";
 import Image from "next/image";
-import { useEffect } from "react";
 import { config } from "../../../config";
 import { NavItem } from "@/lib/types";
 import Link from "next/link";
@@ -24,7 +24,7 @@ export const defaultNavigation = {
       href: "#leaderboard",
       enabled: config.cftools.leaderboard.enabled,
     },
-    { label: "Crafting Guide", href: "/crafting_guide", enabled: true },
+    { label: "Guides", href: "#", enabled: true },
     { label: "Contact", href: "/#contact", enabled: false },
   ],
 } satisfies { items: NavItem[] };
@@ -64,14 +64,34 @@ export default function Header({
 }: HeaderProps) {
   items = items.filter((item) => item.enabled);
 
-  // Note: 80px is exactly h-20 in Tailwind CSS
-  // This is the threshold where the header will shrink
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
   let { scrollYBoundedProgress } = useBoundedScroll(80);
   let scrollYBoundedProgressDelayed = useTransform(
     scrollYBoundedProgress,
     [0, 0.75, 1],
     [0, 0, 1]
   );
+
+  const toggleDropdown = () => {
+    setDropdownOpen((prev) => !prev);
+  };
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [dropdownRef]);
 
   return (
     <div className={cn("z-50 flex-1 overflow-y-scroll", className)}>
@@ -124,15 +144,56 @@ export default function Header({
             }}
             className="hidden sm:flex space-x-4 text-sm font-medium text-slate-400 duration-300"
           >
-            {items.map((item, index) => (
-              <Link
-                key={index}
-                href={item.href}
-                className="font-bold hover:text-primary duration-300"
-              >
-                {item.label}
-              </Link>
-            ))}
+            {items.map((item, index) => {
+              if (item.label === "Guides") {
+                return (
+                  <div key={index} className="relative" ref={dropdownRef}>
+                    <button
+                      onClick={toggleDropdown}
+                      className="font-bold hover:text-primary duration-300 flex items-center"
+                    >
+                      {item.label}
+                      {isDropdownOpen ? (
+                        <ChevronUp className="ml-1 h-4 w-4" />
+                      ) : (
+                        <ChevronDown className="ml-1 h-4 w-4" />
+                      )}
+                    </button>
+                    {isDropdownOpen && (
+                      <div
+                        className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white border rounded-lg shadow-lg z-10 flex flex-col items-center"
+                        style={{ backgroundColor: "rgba(2, 6, 23, 1)" }}
+                      >
+                        <Link
+                          href="/crafting_guide"
+                          className="block px-4 py-2 text-[#94a3b8] hover:text-[#5688f4] duration-300"
+                          onClick={() => setDropdownOpen(false)}
+                        >
+                          Vanilla
+                        </Link>
+                        <Link
+                          href="/crafting_guide"
+                          className="block px-4 py-2 text-[#94a3b8] hover:text-[#5688f4] duration-300"
+                          onClick={() => setDropdownOpen(false)}
+                        >
+                          Modded
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              return (
+                <Link
+                  key={index}
+                  href={item.href}
+                  className="font-bold hover:text-primary duration-300"
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
           </motion.nav>
           <motion.div
             className="block sm:hidden duration-300"
