@@ -96,7 +96,7 @@ const MobileNav = ({
                       {isDropdownOpen && (
                         <div className="flex flex-col mt-2">
                           <LinkButton
-                            href="/crafting_guide/recipe1"
+                            href="/crafting_guide"
                             variant="ghost"
                             size="lg"
                             className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 hover:bg-accent hover:text-accent-foreground h-11 px-8 w-full"
@@ -105,7 +105,7 @@ const MobileNav = ({
                             Vanilla
                           </LinkButton>
                           <LinkButton
-                            href="/crafting_guide/recipe2"
+                            href="/crafting_guide"
                             variant="ghost"
                             size="lg"
                             className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 hover:bg-accent hover:text-accent-foreground h-11 px-8 w-full"
