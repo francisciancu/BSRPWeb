@@ -23,7 +23,7 @@ const CookZ = () => {
               },
               {
                 item: "Empty Can (10x)",
-                recipe: "1x Metal Sheet & 1x Hacksaw.",
+                recipe: "1x Metal Sheet, 1x Hacksaw.",
               },
               {
                 item: "Empty Box",

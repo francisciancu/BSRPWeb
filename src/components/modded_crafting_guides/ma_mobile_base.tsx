@@ -16,7 +16,7 @@ const MAMobileBase = () => {
         <table className="w-full border-collapse mb-8 shadow-md rounded-lg overflow-hidden">
           <thead>
             <tr className="bg-[#5789F6] text-white">
-              <th className="px-4 py-2 text-left">ITEM</th>
+              <th className="px-4 py-2 text-left">CRAFTED ITEM</th>
               <th className="px-4 py-2 text-left">RECIPE</th>
             </tr>
           </thead>

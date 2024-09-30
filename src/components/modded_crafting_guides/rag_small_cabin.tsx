@@ -10,29 +10,28 @@ const RaGSmallCabin = () => {
         <table className="w-full border-collapse mb-8 shadow-md rounded-lg overflow-hidden">
           <thead className="bg-[#5789F6] text-white">
             <tr>
-              <th className="p-4 text-left">ITEM</th>
+              <th className="p-4 text-left">CRAFTED ITEM</th>
               <th className="p-4 text-left">RECIPE</th>
             </tr>
           </thead>
           <tbody>
             {[
-              { item: "Cabin Kit", recipe: "10x Planks & 50x Nails." },
+              { item: "Cabin Kit", recipe: "10x Planks, 50x Nails." },
               {
                 item: "Cabin Foundation",
-                recipe:
-                  "20x Logs, 32x Planks, 0x Stones, 0x Nails, 0x Metal Plate.",
+                recipe: "20x Logs, 32x Planks",
               },
               {
                 item: "Cabin Back Wall",
-                recipe: "20x Logs, 0x Planks, 30x Nails.",
+                recipe: "20x Logs, 30x Nails.",
               },
               {
                 item: "Cabin Front Wall",
-                recipe: "20x Logs, 0x Planks, 30x Nails.",
+                recipe: "20x Logs, 30x Nails.",
               },
               {
                 item: "Cabin Right Wall",
-                recipe: "20x Logs, 0x Planks, 30x Nails.",
+                recipe: "20x Logs, 30x Nails.",
               },
               {
                 item: "Cabin Left Wall",
@@ -59,8 +58,8 @@ const RaGSmallCabin = () => {
                   index % 2 === 0 ? "bg-[#1b1e29]" : "bg-[#2c2f38]"
                 } hover:bg-[#3e4251]`}
               >
-                <td className="p-4">{row.item}</td>
-                <td className="p-4">{row.recipe}</td>
+                <td className="px-4 py-2">{row.item}</td>
+                <td className="px-4 py-2">{row.recipe}</td>
               </tr>
             ))}
           </tbody>

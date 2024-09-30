@@ -18,19 +18,19 @@ const CannabisPlus = () => {
             {[
               {
                 item: "Cannabis Baggy",
-                recipe: "2x Cannabis Bud (Any) & 1x Empty Bag.",
+                recipe: "2x Cannabis Bud (Any), 1x Empty Bag.",
               },
               {
                 item: "Cannabis Brick",
-                recipe: "16x Cannabis Bag (Same kind) & 1x Duct Tape.",
+                recipe: "16x Cannabis Bag (Same kind), 1x Duct Tape.",
               },
               {
                 item: "Joint",
-                recipe: "1x Rolling Paper (Any) & 1x Cannabis Bud (Any).",
+                recipe: "1x Rolling Paper (Any), 1x Cannabis Bud (Any).",
               },
               {
                 item: "Cigarette",
-                recipe: "1x Rolling Paper (Any) & 1x Tobacco Leaf.",
+                recipe: "1x Rolling Paper (Any), 1x Tobacco Leaf.",
               },
               {
                 item: "Pack of Joints",
@@ -42,12 +42,12 @@ const CannabisPlus = () => {
               },
               {
                 item: "Drying Post",
-                recipe: "1x Wooden Log & 1x Rope.",
+                recipe: "1x Wooden Log, 1x Rope.",
               },
               {
                 item: "Cannabis Workbench",
                 recipe:
-                  "10x Planks & 20x Nails. (Do not use, not needed to make any of the above items on this server!)",
+                  "10x Planks, 20x Nails. (Do not use, not needed to make any of the above items on this server!)",
               },
             ].map((row, index) => (
               <tr

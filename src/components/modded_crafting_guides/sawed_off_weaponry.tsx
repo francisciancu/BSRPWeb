@@ -9,18 +9,20 @@ const SawedOffWeaponry = () => {
           <thead className="bg-[#5789F6] text-white">
             <tr>
               <th className="p-4 text-left">CRAFTED ITEM</th>
-              <th className="p-4 text-left">APPROPRIATE WEAPON</th>
-              <th className="p-4 text-left">HACKSAW</th>
+              <th className="p-4 text-left">RECIPE</th>
             </tr>
           </thead>
           <tbody>
             {[
-              { item: "Sawed-Off BK-12", weapon: 1, hacksaw: 1 },
-              { item: "Sawed-Off BK-18", weapon: 1, hacksaw: 1 },
-              { item: "Sawed-Off BK-43", weapon: 1, hacksaw: 1 },
-              { item: "Sawed-Off LE-MAS", weapon: 1, hacksaw: 1 },
-              { item: "Sawed-Off Mosin 91/30", weapon: 1, hacksaw: 1 },
-              { item: "Sawed-Off Revolver", weapon: 1, hacksaw: 1 },
+              { item: "Sawed-Off BK-12", recipe: "1x BK-12, 1x Hacksaw" },
+              { item: "Sawed-Off BK-18", recipe: "1x BK-18, 1x Hacksaw" },
+              { item: "Sawed-Off BK-43", recipe: "1x BK-43, 1x Hacksaw" },
+              { item: "Sawed-Off LE-MAS", recipe: "1x LE-MAS, 1x Hacksaw" },
+              {
+                item: "Sawed-Off Mosin 91/30",
+                recipe: "1x Mosin 91/30, 1x Hacksaw",
+              },
+              { item: "Sawed-Off Revolver", recipe: "1x Revolver, 1x Hacksaw" },
             ].map((row, index) => (
               <tr
                 key={index}
@@ -29,9 +31,8 @@ const SawedOffWeaponry = () => {
                   index % 2 === 0 ? "bg-[#1b1e29]" : "bg-[#2c2f38]"
                 } hover:bg-[#3e4251]`}
               >
-                <td className="p-4">{row.item}</td>
-                <td className="p-4">{row.weapon}</td>
-                <td className="p-4">{row.hacksaw}</td>
+                <td className="px-4 py-2">{row.item}</td>
+                <td className="px-4 py-2">{row.recipe}</td>
               </tr>
             ))}
           </tbody>

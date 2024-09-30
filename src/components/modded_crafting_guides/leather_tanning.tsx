@@ -18,79 +18,79 @@ const LeatherTanning = () => {
             {[
               {
                 item: "Cleaned Animal Pelt",
-                recipe: "1x Any Knife & 1x Any Vanilla Pelt.",
+                recipe: "1x Any Knife, 1x Any Vanilla Pelt.",
               },
               {
                 item: "Rope & Hooks",
-                recipe: "4x Bone Hooks & 1x Rope.",
+                recipe: "4x Bone Hooks, 1x Rope.",
               },
               {
                 item: "Un-Finished Drying Rack Frame",
-                recipe: "5x Short Sticks & 1x Rope.",
+                recipe: "5x Short Sticks, 1x Rope.",
               },
               {
                 item: "Drying Frame",
-                recipe: "1x Rope & Hook & 1x Un-Finished Drying Rack Frame.",
+                recipe: "1x Rope, 1x Hook, 1x Un-Finished Drying Rack Frame.",
               },
               {
                 item: "Leather Cloak",
-                recipe: "50% Leather Sewing Kit & 2x Tanned Leather.",
+                recipe: "50% Leather Sewing Kit, 2x Tanned Leather.",
               },
               {
                 item: "Leather Backpack",
-                recipe: "50% Leather Sewing Kit & 2x Tanned Leather.",
+                recipe: "50% Leather Sewing Kit, 2x Tanned Leather.",
               },
               {
                 item: "Leather Hat",
-                recipe: "20% Leather Sewing Kit & 3x Tanned Leather.",
+                recipe: "20% Leather Sewing Kit, 3x Tanned Leather.",
               },
               {
                 item: "Leather Jacket",
-                recipe: "20% Leather Sewing Kit & 11x Tanned Leather.",
+                recipe: "20% Leather Sewing Kit, 11x Tanned Leather.",
               },
               {
                 item: "Leather Vest",
-                recipe: "20% Leather Sewing Kit & 10x Tanned Leather.",
+                recipe: "20% Leather Sewing Kit, 10x Tanned Leather.",
               },
               {
                 item: "Leather Gloves",
-                recipe: "20% Leather Sewing Kit & 4x Tanned Leather.",
+                recipe: "20% Leather Sewing Ki, 4x Tanned Leather.",
               },
               {
                 item: "Leather Pants",
-                recipe: "20% Leather Sewing Kit & 6x Tanned Leather.",
+                recipe: "20% Leather Sewing Kit, 6x Tanned Leather.",
               },
               {
                 item: "Leather Shoes",
-                recipe: "20% Leather Sewing Kit & 4x Tanned Leather.",
+                recipe: "20% Leather Sewing Kit, 4x Tanned Leather.",
               },
               {
                 item: "Leather Fluid Pouch (Leather Bottle)",
-                recipe: "20% Leather Sewing Kit & 4x Tanned Leather.",
+                recipe: "20% Leather Sewing Kit, 4x Tanned Leather.",
               },
               {
                 item: "Stitched Chest Holster",
-                recipe: "20% Leather Sewing Kit & 4x Tanned Leather.",
+                recipe: "20% Leather Sewing Kit, 4x Tanned Leather.",
               },
               {
                 item: "Stitched Pistol Holster",
-                recipe: "10% Leather Sewing Kit & 2x Tanned Leather.",
+                recipe: "10% Leather Sewing Kit, 2x Tanned Leather.",
               },
               {
                 item: "Stitched Sawed Off Holster",
-                recipe: "25% Leather Sewing Kit & 5x Tanned Leather.",
+                recipe: "25% Leather Sewing Kit, 5x Tanned Leather.",
               },
               {
                 item: "Leather Full Mask",
-                recipe: "20% Leather Sewing Kit & 1x Tanned Leather.",
+                recipe: "20% Leather Sewing Kit, 1x Tanned Leather.",
               },
               {
                 item: "Leather Half Mask",
-                recipe: "Leather Full Mask & Any Knife.",
+                recipe: "Leather Full Mask, 1x Knife(Any).",
               },
               {
                 item: "Leather Eye Mask",
-                recipe: "Leather Half Mask & Any Knife.",
+                recipe: "Leather Half Mask, 1x Knife(Any).",
               },
             ].map((row, index) => (
               <tr

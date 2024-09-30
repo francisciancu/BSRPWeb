@@ -11,69 +11,75 @@ const RaGBaseBuilding = () => {
           <thead>
             <tr className="bg-[#5789F6] text-white">
               <th className="px-4 py-2 text-left">CRAFTED ITEM</th>
-              <th className="px-4 py-2 text-left">LOGS</th>
-              <th className="px-4 py-2 text-left">PLANKS</th>
-              <th className="px-4 py-2 text-left">NAILS</th>
+              <th className="px-4 py-2 text-left">RECIPE</th>
             </tr>
           </thead>
           <tbody>
             {[
-              { item: "Standard Walls", logs: 2, planks: 5, nails: 13 },
-              { item: "Half Walls", logs: 1, planks: 3, nails: 8 },
-              { item: "Pillars", logs: 1, planks: 2, nails: 5 },
-              { item: "Stairs", logs: 1, planks: 5, nails: 8 },
-              { item: "Staircase", logs: 1, planks: 8, nails: 30 },
-              { item: "Staircase (2nd Style)", logs: 1, planks: 10, nails: 30 },
-              { item: "Foundations", logs: 2, planks: 8, nails: 15 },
-              { item: "Flooring", logs: 1, planks: 5, nails: 13 },
-              { item: "Flat Roof", logs: 1, planks: 5, nails: 13 },
-              { item: "Angled Roof", logs: 2, planks: 8, nails: 13 },
-              { item: "Roof End Left", logs: 0, planks: 8, nails: 13 },
-              { item: "Roof End Right", logs: 0, planks: 8, nails: 13 },
-              { item: "Standard Window Frame", logs: 2, planks: 5, nails: 13 },
-              { item: "Standard Window", logs: 0, planks: 5, nails: 5 },
-              { item: "Small Window Frame", logs: 2, planks: 5, nails: 13 },
-              { item: "Small Window", logs: 0, planks: 5, nails: 5 },
-              { item: "Door Frame", logs: 2, planks: 5, nails: 10 },
-              { item: "Door", logs: 0, planks: 5, nails: 5 },
-              { item: "Single Door Frame", logs: 2, planks: 5, nails: 10 },
-              { item: "Single Door", logs: 0, planks: 5, nails: 5 },
+              {
+                item: "Standard Walls",
+                recipe: "2x Logs, 5x Planks, 13x Nails",
+              },
+              { item: "Half Walls", recipe: "1x Logs, 3x Planks, 8x Nails" },
+              { item: "Pillars", recipe: "1x Logs, 2x Planks, 5x Nails" },
+              { item: "Stairs", recipe: "1x Logs, 5x Planks, 8x Nails" },
+              { item: "Staircase", recipe: "1x Logs, 8x Planks, 30x Nails" },
+              {
+                item: "Staircase (2nd Style)",
+                recipe: "1x Logs, 10x Planks, 30x Nails",
+              },
+              { item: "Foundations", recipe: "2x Logs, 8x Planks, 15x Nails" },
+              { item: "Flooring", recipe: "1x Logs, 5x Planks, 13x Nails" },
+              { item: "Flat Roof", recipe: "1x Logs, 5x Planks, 13x Nails" },
+              { item: "Angled Roof", recipe: "2x Logs, 8x Planks, 13x Nails" },
+              { item: "Roof End Left", recipe: "8x Planks, 13x Nails" },
+              { item: "Roof End Right", recipe: "8x Planks, 13x Nails" },
+              {
+                item: "Standard Window Frame",
+                recipe: "2x Logs, 5x Planks, 13x Nails",
+              },
+              { item: "Standard Window", recipe: "5x Planks, 5x Nails" },
+              {
+                item: "Small Window Frame",
+                recipe: "2x Logs, 5x Planks, 13x Nails",
+              },
+              { item: "Small Window", recipe: "5x Planks, 5x Nails" },
+              { item: "Door Frame", recipe: "2x Logs, 5x Planks, 10x Nails" },
+              { item: "Door", recipe: "5x Planks, 5x Nails" },
+              {
+                item: "Single Door Frame",
+                recipe: "2x Logs, 5x Planks, 10x Nails",
+              },
+              { item: "Single Door", recipe: "5x Planks, 5x Nails" },
               {
                 item: "Single / Separated Gate Frames",
-                logs: 1,
-                planks: 5,
-                nails: 10,
+                recipe: "1x Logs, 5x Planks, 10x Nails",
               },
               {
                 item: "Single / Separated Gate Left / Right Doors",
-                logs: 0,
-                planks: 5,
-                nails: 5,
+                recipe: "5x Planks, 5x Nails",
               },
               {
                 item: "Wooden Storage (Stage 1)",
-                logs: 1,
-                planks: 8,
-                nails: 15,
+                recipe: "1x Logs, 8x Planks, 15x Nails",
               },
               {
                 item: "Wooden Storage (Stage 2)",
-                logs: 0,
-                planks: 5,
-                nails: 5,
+                recipe: "5x Planks, 5x Nails",
               },
               {
                 item: "Wooden Storage (Stage 3)",
-                logs: 0,
-                planks: 5,
-                nails: 5,
+                recipe: "5x Planks, 5x Nails",
               },
-              { item: "Ramp", logs: 1, planks: 5, nails: 8 },
-              { item: "Floor Hatch Frame", logs: 2, planks: 5, nails: 10 },
-              { item: "Floor Hatch Door", logs: 0, planks: 5, nails: 5 },
-              { item: "Floor Hatch Staircase", logs: 0, planks: 10, nails: 5 },
-              { item: "Floor Hatch Ladder", logs: 0, planks: 5, nails: 5 },
-              { item: "Ladder", logs: 0, planks: 5, nails: 5 },
+              { item: "Ramp", recipe: "1x Logs, 5x Planks, 8x Nails" },
+              {
+                item: "Floor Hatch Frame",
+                recipe: "2x Logs, 5x Planks, 10x Nails",
+              },
+              { item: "Floor Hatch Door", recipe: "5x Planks, 5x Nails" },
+              { item: "Floor Hatch Staircase", recipe: "10x Planks, 5x Nails" },
+              { item: "Floor Hatch Ladder", recipe: "5x Planks, 5x Nails" },
+              { item: "Ladder", recipe: "5x Planks, 5x Nails" },
             ].map((row, index) => (
               <tr
                 key={index}
@@ -83,9 +89,7 @@ const RaGBaseBuilding = () => {
                 } hover:bg-[#3e4251]`}
               >
                 <td className="px-4 py-2">{row.item}</td>
-                <td className="px-4 py-2">{row.logs}</td>
-                <td className="px-4 py-2">{row.planks}</td>
-                <td className="px-4 py-2">{row.nails}</td>
+                <td className="px-4 py-2">{row.recipe}</td>
               </tr>
             ))}
           </tbody>
