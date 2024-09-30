@@ -111,6 +111,7 @@ const BuildingFortifications = () => {
           ].map((row, index) => (
             <tr
               key={index}
+              id={row.item.replace(/\s+/g, "-").toLowerCase()}
               className={`${
                 index % 2 === 0 ? "bg-[#1b1e29]" : "bg-[#2c2f38]"
               } hover:bg-[#3e4251]`}

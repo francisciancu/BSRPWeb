@@ -77,3 +77,19 @@
     @apply scroll-mt-10;
   }
 }
+
+.flash {
+  animation: flash-animation 1s ease-in-out 3;
+}
+
+@keyframes flash-animation {
+  0%,
+  100% {
+    background-color: var(--original-bg-color);
+    color: white;
+  }
+  50% {
+    background-color: #d3d3d3;
+    color: black;
+  }
+}
