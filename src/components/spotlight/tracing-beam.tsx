@@ -1,12 +1,7 @@
-'use client';
-import React, { useEffect, useRef, useState } from 'react';
-import {
-  motion,
-  useTransform,
-  useScroll,
-  useSpring,
-} from 'framer-motion';
-import { cn } from '@/lib/utils';
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+import { motion, useTransform, useScroll, useSpring } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 export const TracingBeam = ({
   children,
@@ -20,7 +15,7 @@ export const TracingBeam = ({
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ['start start', 'end start'],
+    offset: ["start start", "end start"],
   });
 
   const contentRef = useRef<HTMLDivElement>(null);
@@ -50,7 +45,7 @@ export const TracingBeam = ({
   return (
     <motion.div
       ref={ref}
-      className={cn('relative w-full max-w-4xl mx-auto h-full', className)}
+      className={cn("relative w-full max-w-4xl mx-auto h-full", className)}
     >
       <div className={cn("absolute -left-4 md:-left-20 top-3", beamClassName)}>
         <motion.div
@@ -61,8 +56,8 @@ export const TracingBeam = ({
           animate={{
             boxShadow:
               scrollYProgress.get() > 0
-                ? 'none'
-                : 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+                ? "none"
+                : "rgba(0, 0, 0, 0.24) 0px 3px 8px",
           }}
           className="ml-[27px] h-4 w-4 rounded-full border border-netural-200 shadow-sm flex items-center justify-center"
         >
@@ -73,9 +68,9 @@ export const TracingBeam = ({
             }}
             animate={{
               backgroundColor:
-                scrollYProgress.get() > 0 ? 'white' : 'var(--blue-500)',
+                scrollYProgress.get() > 0 ? "white" : "var(--blue-500)",
               borderColor:
-                scrollYProgress.get() > 0 ? 'white' : 'var(--blue-600)',
+                scrollYProgress.get() > 0 ? "white" : "var(--blue-600)",
             }}
             className="h-2 w-2  rounded-full border border-neutral-300 bg-white"
           />
@@ -133,9 +128,7 @@ export const TracingBeam = ({
           </defs>
         </svg>
       </div>
-      <div ref={contentRef}>
-        {children}
-      </div>
+      <div ref={contentRef}>{children}</div>
     </motion.div>
   );
 };

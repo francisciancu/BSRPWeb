@@ -5,7 +5,7 @@ export const config: Config = {
   themeColor: "#5789f6",
   logoURL: "/images/logoBSRPWhite.png",
   site: {
-    url: "https://www.skvad.eu/",
+    url: "https://bsrp.me/",
     title: "British Survivors Roleplay Community",
     twitter: {
       site: "@site",
@@ -33,12 +33,12 @@ export const config: Config = {
         about: {
           title: "About Us",
           description:
-            "We are a community of DayZ players who are passionate about the game and the experiences it provides. We strive to provide a safe and enjoyable environment for all players.",
+            "Hosted since 2020, British Survivors Roleplay Community has been a long-lasting roleplay experience for many players on DayZ. We pride ourselves on providing an experience that is fun for everyone, combining a mix of interesting storytelling and enjoyable gameplay to allow roleplay to extend to the smallest of actions, making each experience memorable.",
           rows: {
             1: {
               title: "Events",
               description:
-                "We host regular events and competitions for our players to participate in. These events are a great way to meet new people and have fun in the game.",
+                "Most of our events are player-ran, organized within roleplay between players & other factions. They vary in every single way, making no two events the same and a unique experience for all to enjoy!",
               image: {
                 url: "/images/about/events.jpg",
                 alt: "Events Image",
@@ -47,18 +47,18 @@ export const config: Config = {
             2: {
               title: "Community",
               description:
-                "We believe that a strong community is the key to a successful server. We work hard to foster a positive and inclusive community for all players.",
+                "We believe that a strong sense of community is the key to our server running for as long as it has. We work hard to provide a positive and enjoyable place for all our players.",
               image: {
-                url: "/images/about/community.jpg",
+                url: "/images/about/community_image.png",
                 alt: "Community Image",
               },
             },
             3: {
-              title: "Development",
+              title: "Storytelling",
               description:
-                "Our team of developers are constantly working to improve the server and add new features. We welcome feedback and suggestions from our players.",
+                "Featuring a custom-written lore, our server offers a unique spin on the DayZ Roleplay scenario - delving players into the unique circumstances and happenings within the world and providing a truly new experience for everyone.",
               image: {
-                url: "/images/about/development.png",
+                url: "/images/about/storytelling_image.png",
                 alt: "Development Image",
               },
             },
@@ -82,13 +82,13 @@ export const config: Config = {
     },
   },
   hero: {
-    title: "We listen, we learn, we deliver.",
+    title: "Your gateway to one of the best roleplay servers in DayZ.",
     description:
-      "Our DayZ Community is built on the principles of transparency, integrity, and trust. We are committed to providing the best experience for our players. Wether you are a seasoned veteran or a new player, we have a place for you.",
+      "Offering an immersive roleplaying and storytelling experience in DayZ, with no KoS, custom lore and unique scenarios allowing for every interaction with players or the world to play fluidly and not always having to end in bloodshed. Whether you are new to roleplay, or a seasoned veteran, we welcome all with open arms and hope that you will find a place within our community!",
     background: {
       color: "rgb(51 65 85)",
       image: {
-        url: "/images/hero.jpg",
+        url: "/images/hero_bsrp.png",
         alt: "Hero Image",
       },
     },
