@@ -165,14 +165,14 @@ export default function Header({
                         style={{ backgroundColor: "rgba(2, 6, 23, 1)" }}
                       >
                         <Link
-                          href="/crafting_guide"
+                          href="/vanilla_crafting_guide"
                           className="block px-4 py-2 text-[#94a3b8] hover:text-[#5688f4] duration-300"
                           onClick={() => setDropdownOpen(false)}
                         >
                           Vanilla
                         </Link>
                         <Link
-                          href="/crafting_guide"
+                          href="/modded_crafting_guide"
                           className="block px-4 py-2 text-[#94a3b8] hover:text-[#5688f4] duration-300"
                           onClick={() => setDropdownOpen(false)}
                         >

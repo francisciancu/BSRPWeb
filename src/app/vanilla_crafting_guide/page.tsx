@@ -21,7 +21,7 @@ const images = [
   },
 ];
 
-const newpage: React.FC = () => {
+const Vanilla_crafting_guide: React.FC = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between w-full pt-20">
       <LightGallery plugins={[lgThumbnail, lgZoom]} mode="lg-fade">
@@ -43,4 +43,4 @@ const newpage: React.FC = () => {
   );
 };
 
-export default newpage;
+export default Vanilla_crafting_guide;
