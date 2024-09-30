@@ -40,7 +40,7 @@ export const config: Config = {
               description:
                 "Most of our events are player-ran, organized within roleplay between players & other factions. They vary in every single way, making no two events the same and a unique experience for all to enjoy!",
               image: {
-                url: "/images/about/events.jpg",
+                url: "/images/about/event_image.png",
                 alt: "Events Image",
               },
             },
