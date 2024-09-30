@@ -13,7 +13,7 @@ const MAMobileBase = () => {
         </strong>
       </p>
       <div className="overflow-x-auto">
-        <table className="w-full table-auto border-collapse shadow-lg">
+        <table className="w-full border-collapse mb-8 shadow-md rounded-lg overflow-hidden">
           <thead>
             <tr className="bg-[#5789F6] text-white">
               <th className="px-4 py-2 text-left">ITEM</th>
