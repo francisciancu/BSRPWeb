@@ -26,9 +26,9 @@ export const config: Config = {
         "Welcome to the British Survivors Roleplay Community! We are a DayZ community that is dedicated to providing the best experience for our players. Join us today!",
       sections: {
         network: {
-          title: "Server Network",
+          title: "BSRP Server",
           description:
-            "Our DayZ servers are hosted in Europe and are maintained by our dedicated team of developers and system administrators.",
+            "Our DayZ server is hosted in Europe and is maintained by our dedicated team.",
         },
         about: {
           title: "About Us",
