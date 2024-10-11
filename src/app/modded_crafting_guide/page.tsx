@@ -7,7 +7,6 @@ import CannabisPlus from "@/components/modded_crafting_guides/cannabis_plus";
 import CannedDishes from "@/components/modded_crafting_guides/canned_dishes";
 import CookZ from "@/components/modded_crafting_guides/cook_z";
 import EnhancedFlags from "@/components/modded_crafting_guides/enhanced_flags";
-import EvenMoreDoors from "@/components/modded_crafting_guides/even_more_doors";
 import LeatherTanning from "@/components/modded_crafting_guides/leather_tanning";
 import MAMobileBase from "@/components/modded_crafting_guides/ma_mobile_base";
 import RaGBaseBuilding from "@/components/modded_crafting_guides/rag_base_building";
@@ -164,20 +163,20 @@ const items = [
   { name: "Leather Eye Mask", component: "LeatherTanning" },
 
   // EvenMoreDoors
-  { name: "Single Door Kit", component: "EvenMoreDoors" },
-  { name: "Single Door Frame", component: "EvenMoreDoors" },
-  { name: "Single Door Brace", component: "EvenMoreDoors" },
-  { name: "Single Door Wood Panel", component: "EvenMoreDoors" },
-  { name: "Single Door Wood", component: "EvenMoreDoors" },
-  { name: "Single Door Metal Panel", component: "EvenMoreDoors" },
-  { name: "Single Door Metal", component: "EvenMoreDoors" },
-  { name: "Double Door Kit", component: "EvenMoreDoors" },
-  { name: "Double Door Frame", component: "EvenMoreDoors" },
-  { name: "Double Door Brace", component: "EvenMoreDoors" },
-  { name: "Double Door Wood Panel", component: "EvenMoreDoors" },
-  { name: "Double Door Wood", component: "EvenMoreDoors" },
-  { name: "Double Door Metal Panel", component: "EvenMoreDoors" },
-  { name: "Double Door Metal", component: "EvenMoreDoors" },
+  // { name: "Single Door Kit", component: "EvenMoreDoors" },
+  // { name: "Single Door Frame", component: "EvenMoreDoors" },
+  // { name: "Single Door Brace", component: "EvenMoreDoors" },
+  // { name: "Single Door Wood Panel", component: "EvenMoreDoors" },
+  // { name: "Single Door Wood", component: "EvenMoreDoors" },
+  // { name: "Single Door Metal Panel", component: "EvenMoreDoors" },
+  // { name: "Single Door Metal", component: "EvenMoreDoors" },
+  // { name: "Double Door Kit", component: "EvenMoreDoors" },
+  // { name: "Double Door Frame", component: "EvenMoreDoors" },
+  // { name: "Double Door Brace", component: "EvenMoreDoors" },
+  // { name: "Double Door Wood Panel", component: "EvenMoreDoors" },
+  // { name: "Double Door Wood", component: "EvenMoreDoors" },
+  // { name: "Double Door Metal Panel", component: "EvenMoreDoors" },
+  // { name: "Double Door Metal", component: "EvenMoreDoors" },
 
   // BuildingFortifications
 
@@ -352,7 +351,7 @@ const Modded_crafting_guide: React.FC = () => {
         <CannedDishes />
         <Sausages />
         <LeatherTanning />
-        <EvenMoreDoors />
+        {/* <EvenMoreDoors /> */}
         <BuildingFortifications />
         <CannabisPlus />
       </div>
