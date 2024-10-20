@@ -17,9 +17,9 @@ const CookZ = () => {
           <tbody>
             {[
               {
-                item: "Disinfect Rags",
+                item: "Disinfect Rags/Bandages",
                 recipe:
-                  "Boil rags in a pot or cauldron with at least 500ml of water (use more to keep it boiling) to disinfect.",
+                  "Boil rags/bandages in a pot or cauldron with at least 500ml of water (use more to keep it boiling) to disinfect.",
               },
               {
                 item: "Empty Can (10x)",
@@ -29,6 +29,11 @@ const CookZ = () => {
                 item: "Empty Box",
                 recipe:
                   "Combine 2x pieces of paper or cut some bark off a tree and combine with an axe or knife.",
+              },
+              {
+                item: "Cheese",
+                recipe:
+                  "2x Fat, 2x Powdered Milk. Boil in a pot or cauldron with at least 500ml of water.",
               },
             ].map((row, index) => (
               <tr

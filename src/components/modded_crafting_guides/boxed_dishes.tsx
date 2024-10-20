@@ -76,6 +76,21 @@ const BoxedDishes = () => {
                 recipe:
                   "1x Sausage (Any), 1x Fat, 1x Potato, 1x Tomato. Fry in a pan. Fill into an empty box.",
               },
+              {
+                item: "Stuffed Mushrooms",
+                recipe:
+                  "4x Any Mushrooms, 1x Cheese. Fry in a pan, Fill into an empty box.",
+              },
+              {
+                item: "Rabbit Roast",
+                recipe:
+                  "2x Hare Leg, 2x Pepper, 3x Tomato. Put into a pot or cauldron w/o water, Fill into an empty box.",
+              },
+              {
+                item: "Nuggies & Fries",
+                recipe:
+                  "2x Chicken Steak, 1x Fat, 2x Potato. Fry in a pan. Fill into an empty box.",
+              },
             ].map((row, index) => (
               <tr
                 key={index}

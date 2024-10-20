@@ -94,9 +94,10 @@ const items = [
   { name: "Grassy Rifle Wrap", component: "BurlapRifleWinding" },
 
   // CookZ
-  { name: "Disinfect Rags", component: "CookZ" },
+  { name: "Disinfect Rags/Bandages", component: "CookZ" },
   { name: "Empty Can (10x)", component: "CookZ" },
   { name: "Empty Box", component: "CookZ" },
+  { name: "Cheese", component: "CookZ" },
 
   // BoxedDishes
   { name: "Fried Potatoes", component: "BoxedDishes" },
@@ -111,6 +112,9 @@ const items = [
   { name: "Pommdöener", component: "BoxedDishes" },
   { name: "Bangers & Mash", component: "BoxedDishes" },
   { name: "Currywurst", component: "BoxedDishes" },
+  { name: "Stuffed Mushrooms", component: "BoxedDishes" },
+  { name: "Rabbit Roast", component: "BoxedDishes" },
+  { name: "Nuggies & Fries", component: "BoxedDishes" },
 
   // CannedDishes
   { name: "Goulash", component: "CannedDishes" },
