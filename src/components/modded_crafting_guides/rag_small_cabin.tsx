@@ -19,7 +19,7 @@ const RaGSmallCabin = () => {
               { item: "Cabin Kit", recipe: "10x Planks, 50x Nails." },
               {
                 item: "Cabin Foundation",
-                recipe: "20x Logs, 32x Planks",
+                recipe: "20x Logs, 32x Planks, 32x Stones.",
               },
               {
                 item: "Cabin Back Wall",
@@ -35,7 +35,7 @@ const RaGSmallCabin = () => {
               },
               {
                 item: "Cabin Left Wall",
-                recipe: "20x Logs, 20x Planks, 30x Nails.",
+                recipe: "20x Logs, 20x Planks, 30x Nails, 20x Stones.",
               },
               { item: "Cabin Door", recipe: "10x Planks, 20x Nails." },
               {
