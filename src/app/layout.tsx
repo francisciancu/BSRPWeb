@@ -20,8 +20,8 @@ export async function generateMetadata(): Promise<Metadata> {
     alternates: { canonical: "/" },
     icons: {
       icon: "/favicon.ico",
-      shortcut: "/favicon-16x16.png",
-      apple: "/apple-touch-icon.png",
+      shortcut: "/favicon.ico",
+      apple: "/favicon.ico",
     },
     twitter: {
       card: config.site.twitter?.card ?? "summary_large_image",
